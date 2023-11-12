@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		949269E42AFED74A00C6059B /* MthodSizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 949269E22AFED74A00C6059B /* MthodSizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		949269EC2AFED76400C6059B /* MethodSizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949269EB2AFED76400C6059B /* MethodSizzler.swift */; };
+		949269F62AFEDEF900C6059B /* MthodSizzlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949269F52AFEDEF900C6059B /* MthodSizzlingTests.swift */; };
+		949269F82AFEDEF900C6059B /* MthodSizzling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949269DF2AFED74A00C6059B /* MthodSizzling.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		949269F92AFEDEF900C6059B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949269D62AFED74A00C6059B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 949269DE2AFED74A00C6059B;
+			remoteInfo = MthodSizzling;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		949269DF2AFED74A00C6059B /* MthodSizzling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MthodSizzling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		949269E22AFED74A00C6059B /* MthodSizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MthodSizzling.h; sourceTree = "<group>"; };
 		949269E32AFED74A00C6059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		949269EB2AFED76400C6059B /* MethodSizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSizzler.swift; sourceTree = "<group>"; };
+		949269F32AFEDEF900C6059B /* MthodSizzlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MthodSizzlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		949269F52AFEDEF900C6059B /* MthodSizzlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MthodSizzlingTests.swift; sourceTree = "<group>"; };
+		949269F72AFEDEF900C6059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		949269F02AFEDEF900C6059B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949269F82AFEDEF900C6059B /* MthodSizzling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				949269E12AFED74A00C6059B /* MthodSizzling */,
+				949269F42AFEDEF900C6059B /* MthodSizzlingTests */,
 				949269E02AFED74A00C6059B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				949269DF2AFED74A00C6059B /* MthodSizzling.framework */,
+				949269F32AFEDEF900C6059B /* MthodSizzlingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,9 +74,19 @@
 			isa = PBXGroup;
 			children = (
 				949269E22AFED74A00C6059B /* MthodSizzling.h */,
+				949269EB2AFED76400C6059B /* MethodSizzler.swift */,
 				949269E32AFED74A00C6059B /* Info.plist */,
 			);
 			path = MthodSizzling;
+			sourceTree = "<group>";
+		};
+		949269F42AFEDEF900C6059B /* MthodSizzlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				949269F52AFEDEF900C6059B /* MthodSizzlingTests.swift */,
+				949269F72AFEDEF900C6059B /* Info.plist */,
+			);
+			path = MthodSizzlingTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,15 +121,38 @@
 			productReference = 949269DF2AFED74A00C6059B /* MthodSizzling.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		949269F22AFEDEF900C6059B /* MthodSizzlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949269FD2AFEDEF900C6059B /* Build configuration list for PBXNativeTarget "MthodSizzlingTests" */;
+			buildPhases = (
+				949269EF2AFEDEF900C6059B /* Sources */,
+				949269F02AFEDEF900C6059B /* Frameworks */,
+				949269F12AFEDEF900C6059B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				949269FA2AFEDEF900C6059B /* PBXTargetDependency */,
+			);
+			name = MthodSizzlingTests;
+			productName = MthodSizzlingTests;
+			productReference = 949269F32AFEDEF900C6059B /* MthodSizzlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		949269D62AFED74A00C6059B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					949269DE2AFED74A00C6059B = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					949269F22AFEDEF900C6059B = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -111,12 +171,20 @@
 			projectRoot = "";
 			targets = (
 				949269DE2AFED74A00C6059B /* MthodSizzling */,
+				949269F22AFEDEF900C6059B /* MthodSizzlingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		949269DD2AFED74A00C6059B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949269F12AFEDEF900C6059B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,10 +198,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949269EC2AFED76400C6059B /* MethodSizzler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949269EF2AFEDEF900C6059B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949269F62AFEDEF900C6059B /* MthodSizzlingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		949269FA2AFEDEF900C6059B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 949269DE2AFED74A00C6059B /* MthodSizzling */;
+			targetProxy = 949269F92AFEDEF900C6059B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		949269E52AFED74A00C6059B /* Debug */ = {
@@ -260,6 +345,7 @@
 		949269E82AFED74A00C6059B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -277,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vimal.MthodSizzling;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -284,6 +371,7 @@
 		949269E92AFED74A00C6059B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -305,6 +393,42 @@
 			};
 			name = Release;
 		};
+		949269FB2AFEDEF900C6059B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9E26H623J7;
+				INFOPLIST_FILE = MthodSizzlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimal.MthodSizzlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		949269FC2AFEDEF900C6059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9E26H623J7;
+				INFOPLIST_FILE = MthodSizzlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimal.MthodSizzlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -322,6 +446,15 @@
 			buildConfigurations = (
 				949269E82AFED74A00C6059B /* Debug */,
 				949269E92AFED74A00C6059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949269FD2AFEDEF900C6059B /* Build configuration list for PBXNativeTarget "MthodSizzlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949269FB2AFEDEF900C6059B /* Debug */,
+				949269FC2AFEDEF900C6059B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
